@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+::-webkit-scrollbar{
+  display: none;
+}
+::placeholder{
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 900;
+  color:azure;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Mono', monospace;
+  background: #0f1340;
+  color: white;
+}
+header{
+ display: flex;
+ align-items: center;
+ flex-direction: column; 
+}
+header h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+header p{
+  font-weight: 800;
+  color: rgb(247, 239, 239, .7);
+  text-align: center;
+}
+section{
+  margin-top: 50px;
+}
+.container{
+  display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background-color: aliceblue;
+  width: 300px;
+  height: 250px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.main input{
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-family: 'Noto Sans Mono', monospace;
+  background: #1A2172;
+  color: white;
+  border-radius: 5px;
+  width: 80%;
+}
+.btn{
+  display: flex;
+  gap: 40px;
+}
+button{
+  font-family: 'Noto Sans Mono', monospace;
+  background:#505acb;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  color: white; 
+  box-shadow: .2rem .2rem black;
+  font-size: .9rem;
+}
+ion-icon{
+  position: relative;
+  top: 3px;
+  font-size: 1rem;
+  left: 3px;
+}
+.checkbox{
+  display: flex;
+  gap: 40px;
+}
+.checkbox div{
+  display: flex;
+}
+.checkbox label{
+  color: black;
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 578px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header h1{
+    font-size: 2rem;
+  }
+  header p{
+    font-size: .9rem;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .img img{
+    width: 100%;
+    height: auto;
+  }
+  .main{
+    width: 300px;
+    padding: 15px;
+    background: black;
+  }
+  ::placeholder{
+    color: grey;
+  }
+  input:focus{
+    outline: none;
+  }
+  button{
+    background: #1A2172;
+  }
+  .checkbox label{
+    color: white;
+    padding: 5px;
+  }
+  .checkbox checkbox{
+    background-color: red;
+  }
+}

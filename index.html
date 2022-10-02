@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thinking of a password? -- This is a right place!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/images/icons8-lock-50.png" type="image/x-icon">
+</head>
+<body>
+<header>
+  <h1>Random Password Generator</h1>
+  <p>Create strong and secure passwords to keep your account safe online.</p>
+</header>
+<section>
+  <div class="container">
+    <div class="img">
+      <img src="/images/security.png" alt="">
+    </div>
+    <div class="main">
+      <input type="text" id="password-length" placeholder="password length: < 16">
+      <input type="text" id="password-get-field" placeholder="Keep it secret">
+      <div class="checkbox">
+        <div>
+          <input type="checkbox" name="number" id="number">
+          <label for="number">Numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" name="characters" id="characters">
+          <label for="characters">Characters</label>
+        </div>
+      </div>
+      <div class="btn">
+        <button id = "generate-btn">Generate<ion-icon name="refresh-outline"></ion-icon></button>
+        <button id = "copy-btn">copy <ion-icon name="copy-outline"></ion-icon></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
